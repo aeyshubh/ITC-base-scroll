@@ -36,7 +36,7 @@ console.log("Message : "+JSON.stringify(message));
     const data = encodeFunctionData({
       abi: interchainToken,
       functionName: 'interchainTransfer',
-      args: ["optimism",result,parseEther(amount),'0x'],
+      args: ["scroll",result,parseEther(amount),'0x'],
     });
   
     const txData: FrameTransactionResponse = {
@@ -60,7 +60,7 @@ console.log("Message : "+JSON.stringify(message));
     });
   
     const txData: FrameTransactionResponse = {
-      chainId: `eip155:${optimism.id}`, // Remember Base Sepolia might not work on Warpcast yet
+      chainId: `eip155:${scroll.id}`, // Remember Base Sepolia might not work on Warpcast yet
       method: 'eth_sendTransaction',
       params: {
         abi: [],

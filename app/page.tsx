@@ -6,13 +6,13 @@ const frameMetadata = getFrameMetadata({
   buttons: [
     {
       action: 'tx',
-      label: 'OP -> Scroll',
+      label: 'Base -> Scroll',
       target: `${NEXT_PUBLIC_URL}/api/tx`,
       postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
     },
     {
       action: 'tx',
-      label: 'Scroll -> Base',
+      label: 'OP -> Base',
       target: `${NEXT_PUBLIC_URL}/api/tx`,
       postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
     },
