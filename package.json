@@ -11,7 +11,6 @@
   "keywords": [],
   "license": "MIT",
   "dependencies": {
-    "@axelar-network/axelarjs-sdk": "^0.13.9",
     "@axelar-network/interchain-token-service": "^1.2.4",
     "@coinbase/onchainkit": "^0.11.0",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
