@@ -60,7 +60,7 @@ console.log("Message : "+JSON.stringify(message));
     });
   
     const txData: FrameTransactionResponse = {
-      chainId: `eip155:${scroll.id}`, // Remember Base Sepolia might not work on Warpcast yet
+      chainId: `eip155:${optimism.id}`, // Remember Base Sepolia might not work on Warpcast yet
       method: 'eth_sendTransaction',
       params: {
         abi: [],
