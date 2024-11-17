@@ -6,7 +6,7 @@ const frameMetadata = getFrameMetadata({
   buttons: [
     {
       action: 'tx',
-      label: 'Base -> Scroll',
+      label: 'OP -> Scroll',
       target: `${NEXT_PUBLIC_URL}/api/tx`,
       postUrl: `${NEXT_PUBLIC_URL}/api/tx-success`,
     },

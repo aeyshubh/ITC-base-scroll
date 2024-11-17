@@ -14,8 +14,10 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
     getFrameHtmlResponse({
       buttons: [
         {
-          label: `Tx: ${body?.untrustedData?.transactionId || '--'}`,
-        },
+          action: 'link',
+          label: 'Check Transaction',
+          target: `https://axelarscan.io/transfers/search`,
+        }
       ],
       image: {
         src: `${NEXT_PUBLIC_URL}s1.PNG`,

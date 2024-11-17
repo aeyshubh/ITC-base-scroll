@@ -36,7 +36,7 @@ console.log("Message : "+JSON.stringify(message));
     const data = encodeFunctionData({
       abi: interchainToken,
       functionName: 'interchainTransfer',
-      args: ["scroll",result,parseEther(amount),'0x'],
+      args: ["optimism",result,parseEther(amount),'0x'],
     });
   
     const txData: FrameTransactionResponse = {
